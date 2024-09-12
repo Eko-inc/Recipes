@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+       
+        <nav class="navbar">
+            <div class="logo">Food Recipes</div>
+            <ul class="nav-links">
+                <li><a href="#appetize">Appetizers</a></li>
+                <li><a href="#dish">Main Courses</a></li>
+                <li><a href="#dessert">Desserts</a></li>
+                <li><a href="#drink">Drinks</a></li>
+            </ul>
+           
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for recipes..." onkeyup="filterRecipes()">
+            </div>
+        </nav>
+    </header>
+
+  
+    <main>
+        <h2 class="mainh2">Appetizers</h2>
+        <section class="recipe-grid" id="appetize">
+   
+            <div class="recipe-card" data-title="Yuka Fries">
+                <img src="img/R.jpeg" alt="Recipe 1">
+                <div class="recipe-details">
+                    <h3>Yuka Fries</h3>
+                    <p>A group of well fried and tasty yuka.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Yuka and seasoning</p>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="recipe-card" data-title="Fries">
+                <img src="img/OIP.jpeg" alt="Recipe 2">
+                <div class="recipe-details">
+                    <h3>Fries</h3>
+                    <p>The classical and loved fries.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Potatoes and salt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-title="Onion Rings">
+                <img src="img/onio.jpeg" alt="Recipe 3">
+                <div class="recipe-details">
+                    <h3>Onion Rings</h3>
+                    <p>A classic Italian dish with a rich meat sauce.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Onions, Salt and Flour</p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+        <h2>Main Dishes</h2>
+        <section class="recipe-grid" id="dish">
+   
+            <div class="recipe-card" data-title="Beef Burger">
+                <img src="img/burg.webp" alt="Recipe 1">
+                <div class="recipe-details">
+                    <h3>Beef Burger</h3>
+                    <p>A Beef Burger packed with nutrients.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Beef Patty, Hamburger bread, onions, cheese, ketchup & Mayonaise</p>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="recipe-card" data-title="Lasagna">
+                <img src="img/lasag.jpeg" alt="Recipe 2">
+                <div class="recipe-details">
+                    <h3>Lasagna</h3>
+                    <p>Lasagna packed with your favorites.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Lasagna pasta, tomato sauce, cheese, ground beef & seasoning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-title="Chicken nuggets">
+                <img src="img/nuggets.jpeg" alt="Recipe 3">
+                <div class="recipe-details">
+                    <h3>Chicken nuggets</h3>
+                    <p>Everyones loved meal.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: chicken, flour & seasoning</p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+        <h2>Desserts</h2>
+        <section class="recipe-grid" id="dessert">
+   
+            <div class="recipe-card" data-title="Chocolate Cake">
+                <img src="img/choco.jpeg" alt="Recipe 1">
+                <div class="recipe-details">
+                    <h3>Chocolate cake</h3>
+                    <p>A cake packed with chocolate.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Cake mix & chocolate</p>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="recipe-card" data-title="Brownies">
+                <img src="img/brown.jpeg" alt="Recipe 2">
+                <div class="recipe-details">
+                    <h3>Brownies</h3>
+                    <p>A delicious, amazing serve of brownies.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Brownie mix & sugar</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-title="Milkshake">
+                <img src="img/shake.jpeg" alt="Recipe 3">
+                <div class="recipe-details">
+                    <h3>Milkshake</h3>
+                    <p>The amazing Milkshake you need</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Milk, Ice, Sugar & Flavor</p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+        <h2>Drinks</h2>
+        <section class="recipe-grid" id="drink">
+   
+            <div class="recipe-card" data-title="Lemonade">
+                <img src="img/lemon.webp" alt="Recipe 1">
+                <div class="recipe-details">
+                    <h3>Lemonade</h3>
+                    <p>Sweet and sour.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Lemon, Water & Sugar.</p>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="recipe-card" data-title="Grape juice">
+                <img src="img/grape.jpg" alt="Recipe 2">
+                <div class="recipe-details">
+                    <h3>Grape Juice</h3>
+                    <p>A fresh juice of grape.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Grapes, Water & Sugar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-title="Apple Juice">
+                <img src="img/apple.jpg" alt="Recipe 3">
+                <div class="recipe-details">
+                    <h3>Apple Juice</h3>
+                    <p>Classical Apple Juice.</p>
+                    <button class="toggle-recipe" onclick="toggleRecipe(this)">View Recipe</button>
+                    <div class="full-recipe">
+                        <p>Ingredients: Apple concentrate, Sugar & Water.</p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved by Kyle Hyde &copy;</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
